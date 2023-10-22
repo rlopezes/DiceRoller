@@ -36,10 +36,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DiceWithButtonAndImage(modifier = Modifier
-                        .fillMaxSize()
-                        .wrapContentSize(Alignment.Center)
-                    )
+                    DiceRollerApp()
                 }
             }
         }
@@ -50,7 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DiceRollerApp() {
     DiceWithButtonAndImage(modifier = Modifier
-        //Aprovecha todo el espacio de la pantalla
+        //Aprovecha la totalidad del espacio de pantalla
         .fillMaxSize()
         //Centra los elementos vertical y horizontalmente
         .wrapContentSize(Alignment.Center)
